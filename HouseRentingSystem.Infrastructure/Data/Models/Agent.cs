@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using static HouseRentingSystem.Infrastructure.Constants.DataConstants;
 namespace HouseRentingSystem.Infrastructure.Data.Models
 {
+    [Index(nameof(PhoneNumber), IsUnique = true)]
     public class Agent
     {
         [Key]
