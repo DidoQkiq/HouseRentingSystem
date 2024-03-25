@@ -4,13 +4,12 @@ using static HouseRentingSystem.Infrastructure.Constants.DataConstants;
 
 namespace HouseRentingSystem.Core.Models.Agent
 {
-    public class BecomeAgentFromModel
+    public class BecomeAgentFormModel
     {
-
         [Required(ErrorMessage = RequiredMessage)]
         [StringLength(AgentPhoneNumberMaxLength, MinimumLength = AgentPhoneNumberMinLength, ErrorMessage = LengthMessage)]
         [Display(Name = "Phone number")]
         [Phone]
-        public string PhoneNumber { get; set; } = null!;
+        public string PhoneNumber { get; set; } = null!; 
     }
 }

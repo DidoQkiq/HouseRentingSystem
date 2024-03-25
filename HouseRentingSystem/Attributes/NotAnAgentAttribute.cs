@@ -23,7 +23,6 @@ namespace HouseRentingSystem.Attributes
             {
                 context.Result = new StatusCodeResult(StatusCodes.Status400BadRequest);
             }
-
         }
     }
 }
